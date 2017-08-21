@@ -1,0 +1,443 @@
+/*泛*/
+
+* {
+	font-family: "微软雅黑";
+	margin: 0;
+	padding: 0;
+}
+
+
+/*设置网站整体字体颜色*/
+body {
+  	margin: 0;
+  	padding: 0;
+	color: #FFFFFF;
+}
+
+/*
+#video {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	overflow: hidden;
+}
+
+#video video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+*/
+/*导航*/
+
+a:link,a:hover,a:visited,a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.card-holder {  
+  position: fixed;
+  width: 0px;
+  overflow: visible;
+}
+.card-wrapper {
+  display: inline-block;
+  float: right;
+  clear: both;
+}
+
+.card {
+  position: relative;
+  left: 32px;
+  padding: 16px 32px 16px 64px;
+  margin: 8px;  
+  x-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 0 8px -8px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.card:hover {
+  position: relative;
+  left: 100%;
+  margin-left: -32px;
+  box-shadow: 
+    0 -8px 8px -8px rgba(0, 0, 0, 0.5),
+    0 8px 8px -8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-content {
+  display: inline-block;
+  color: #fff;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.bg-01 { background: #539770; }
+.bg-02 { background: #FF7F00; }
+.bg-03 { background: #40E0D0; }
+
+
+/*查询 天气部分*/
+#content {
+/*	display: flex;*/
+	height: 100vh;
+	background-image: url(../img/l1.jpg);
+	background-size: 100% 100%;
+/*		background-size: cover;*/
+	/*	width: 100%;*/
+	width: 100%;
+
+
+}
+
+#content .message {
+	width: 850px;
+	height: 200px;
+/*	background: rgba(0, 0, 0, 0.4);*/
+	margin: 0px auto;
+/*	margin-top: 30px;*/
+padding-top: 80px;
+pisition:fixed;
+}
+
+#content .message .m_details {
+	width: 100%;
+	height: 200px;
+	/*				background: blue;*/
+	float: left;
+}
+
+#content .message .m_query {
+	height: 30px;
+	/*				background: red;*/
+	line-height: 30px;
+	margin: 10px 20px 0 0;
+	float: right;
+}
+/*日期*/
+#content .message .m_query .date {
+	float: left;
+}
+/*城市*/
+#content .message .m_query .city {
+	margin: 0 40px;
+	float: left;
+}
+/*输入框*/
+#content .message .m_query .input {
+	height: 33px;
+	outline: none;
+	border: 1px solid rgba(0, 245, 255, .4);
+	background: rgba(0, 0, 0, 0.4);
+	color: #FFFFFF;
+	text-indent: 10px;
+	float: left;
+}
+/*查询按钮*/
+#content .message .m_query .btn {
+	color: #FFFFFF;
+	text-decoration: none;
+	background: rgba(0, 245, 255, .4);
+	float: left;
+}
+
+#content .message .m_details .d_left {
+	width: 300px;
+	height: 160px;
+	/*				background: red;*/
+	line-height: 160px;
+	float: left;
+}
+/*温度*/
+#l_num {
+	width:305px;
+	height:155px;
+	font-size: 170px;
+	float: left;
+}
+
+#content .message .m_details .d_left .l_nav {
+	font-size: 80px;
+	float: left;
+}
+
+#content .message .m_details .d_right {
+	font-size: 20px;
+	width: 550px;
+	/*				height:160px ;*/
+	/*				background: red;*/
+	float: right;
+}
+.r_num{
+	margin-right:60px;
+	margin-bottom:20px;
+	color:#FF7F00;
+	padding-top:40px;
+	font-size:50px;
+	float:right;
+}
+/*天气*/
+#content .message .m_details .d_right .r_weather {
+	margin-left: 10px;
+	float: left;
+}
+
+#content .message .m_details .d_right .r_weather p {
+	float: right;
+}
+/*风力*/
+#content .message .m_details .d_right .r_wind {
+	margin: 0 60px;
+	float: left;
+}
+
+#content .message .m_details .d_right .r_wind p {
+	float: right;
+}
+#content .message .m_details .d_right .r_humidity {
+	float: left;
+}
+
+#content .message .m_details .d_right .r_humidity p {
+	float: right;
+}
+
+span {
+	margin: 3px;
+}
+
+#text {
+	width: 800px;
+	height: 150px;
+	background: rgba(0, 0, 0, .2);
+	margin: 100px auto;
+	
+}
+
+#text p {
+	font-size: 25px;
+	text-align: center;
+	top: 100px;
+	padding: 10px; //
+	float: left;
+	overflow: hidden;
+}
+
+#text span {
+	margin-right: 280px;
+	font-size: 25px; //
+	text-align: center;
+	line-height: inherit; //
+	padding: 10px;
+	float: right;
+	overflow: hidden;
+}
+
+
+#more .m_details {
+	height: 240px;
+
+	margin: 0px auto;
+	display: table;
+}
+
+#more .m_details ul li {
+	list-style: none;
+	width: 120px;
+	height: 240px;
+	float: left;
+	margin: 40px 0;
+}
+#more .m_details ul li:hover{
+	border:solod #fff 1px;
+	background: rgba(0, 0, 0, .4);
+}
+
+#more .m_details ul li div {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 20px;
+}
+/*实时新闻*/
+#more3 .m_news {
+	/*	width: 100%;*/
+	height: 100vh;
+	/*position: absolute;*/
+	/*	background: rgba(0,0,0,.5);*/
+	background-image: url(../img/pic08.jpg);
+	background-size: 100% 100%;
+}
+#more3 .m_news .m_tital{
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 24px;
+	width: 100%;
+	height: 35px;
+	background: rgba(0, 0, 0, .5);
+}
+#more3 .m_news .m_tital span{
+	color: #E94A16;
+}
+#more3 .m_news .more_news{
+	width: 1040px;
+
+/*	height: 100%;*/
+	background: rgba(0, 0, 0, .5);
+	margin: 50px auto;
+	
+}
+.ls_on{
+	padding: 20px;
+	width: 1040px;
+	height: 160px;
+	list-style: none;
+/*	border: 1px solid #31B0D5;*/
+	background: rgba(0,0,0,0.4);
+	float: right;
+}
+.ls_on:hover{
+	background: rgba(0,0,0,0.6);
+}
+
+
+.ls_on img{
+	cursor: pointer;  
+    transition: all 0.6s; 
+	float: left;
+}
+.ls_on img:hover{
+  /*-ms-transform:rotate(90deg); 	 IE 9 */
+   /* -moz-transform:rotate(90deg); 	 Firefox */
+   /* -webkit-transform:rotate(90deg);  Safari 和 Chrome */
+   /* -o-transform:rotate(90deg); 	 Opera */
+	transform: scale(1.4); 
+}
+.ls_on p,.ls_on h2{
+/*	float: right;*/
+	margin-left: 200px;
+}
+.ls_on p{
+	color: #F1F1F1;
+}
+
+h2{
+	display: block;
+	font-size: 16px;
+	color: #076ea8;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-weight: normal;
+}
+#m_context .x_context {
+	
+	/*	width: 100%;*/
+	height: 100vh;
+	/*position: absolute;*/
+	/*	background: rgba(0,0,0,.5);*/
+	background-image: url(../img/pic07.jpg);
+	background-size: 100% 100%;
+}
+#m_context .x_context .more2 {
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 24px;
+	width: 100%;
+	height: 35px;
+	background: rgba(0, 0, 0, .5);
+}
+
+#m_context .x_context .more2 span {
+	color: #E94A16;
+}
+#m_context .x_context .more2 span:hover{
+	font-weight: 10px;
+	
+}
+#m_context .x_context .sh_menu {
+	width: 1040px;
+	height: 520px;
+	background: rgba(0, 0, 0, .5);
+	margin: 100px auto;
+}
+
+#m_context .x_context .sh_menu ul li {
+	position: relative;
+	width: 220px;
+	height: 220px;
+	background: rgba(0, 0, 0, .6);
+	border-radius: 4px;
+	float: left;
+	margin: 20px 20px 20px 20px;
+	overflow: hidden;
+	list-style: none;
+}
+#m_context .x_context .sh_menu ul li:hover .comments{
+	bottom: 0px;
+	/*background: red;*/
+	
+}
+
+.tg_s {
+	text-align: center;
+	display: block;
+	font-size: 22px;
+}
+
+#tg_s1,#tg_s2,#tg_s3,#tg_s4,#tg_s5,#tg_s6,#tg_s7,#tg_s8{
+	text-align: center;
+	display: block;
+	font-size: 15px;
+	color: #66AFE9;
+}
+
+
+#m_context .x_context .sh_menu ul li img {
+	border: 0;
+	/*	vertical-align: top;*/
+	margin-top: 50px;
+	/*	margin-bottom: 50px;*/
+	margin-left: 70px;
+	display: block;
+}
+.comments{
+
+	bottom: -85px;
+	width: 220px;
+	height: 65px;
+	background:#f60;
+	padding:0 22px;
+	position: absolute;
+	transition: 0.5s;
+	
+}
+.comments p{
+	text-align: center;
+	position: absolute;
+	font-size: 15px;
+	margin-top:10px;
+}
+
+/*页面淡入淡出效果*/
+
+@keyframes fade-in {  
+    0% {opacity: 0;}/*初始状态 透明度为0*/  
+    40% {opacity: 0;}/*过渡状态 透明度为0*/  
+    100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+@-webkit-keyframes fade-in {/*针对webkit内核*/  
+    0% {opacity: 0;}  
+    40% {opacity: 0;}  
+    100% {opacity: 1;}  
+}  
+body {    
+    animation: fade-in;/*动画名称*/  
+    animation-duration: 2.0s;/*动画持续时间*/  
+    -webkit-animation:fade-in 1.5s;/*针对webkit内核*/  
+}  
